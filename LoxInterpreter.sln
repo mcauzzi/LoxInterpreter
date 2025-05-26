@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoxInterpreter", "LoxInterpreter\LoxInterpreter.csproj", "{D03B0CEF-0707-4785-8CB4-8E793C3DA3D9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AstGenerator", "AstGenerator\AstGenerator.csproj", "{489B8AEE-2ACE-44F5-94F5-F4D2CAFD4A0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoxTests", "LoxTests\LoxTests.csproj", "{DA54F41B-11C2-4269-8D06-BD50CAF0C00D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{D03B0CEF-0707-4785-8CB4-8E793C3DA3D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D03B0CEF-0707-4785-8CB4-8E793C3DA3D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D03B0CEF-0707-4785-8CB4-8E793C3DA3D9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489B8AEE-2ACE-44F5-94F5-F4D2CAFD4A0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489B8AEE-2ACE-44F5-94F5-F4D2CAFD4A0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489B8AEE-2ACE-44F5-94F5-F4D2CAFD4A0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489B8AEE-2ACE-44F5-94F5-F4D2CAFD4A0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA54F41B-11C2-4269-8D06-BD50CAF0C00D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA54F41B-11C2-4269-8D06-BD50CAF0C00D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA54F41B-11C2-4269-8D06-BD50CAF0C00D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA54F41B-11C2-4269-8D06-BD50CAF0C00D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
