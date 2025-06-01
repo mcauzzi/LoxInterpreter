@@ -3,7 +3,7 @@ using LoxInterpreter.Parser;
 
 namespace LoxTests;
 
-public class UnitTest1
+public class AstPrinterTests
 {
     [Theory]
     [MemberData(nameof(AstPrinterTestData))]

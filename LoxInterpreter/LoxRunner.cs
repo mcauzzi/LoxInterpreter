@@ -1,3 +1,5 @@
+using LoxInterpreter.Parser;
+
 namespace LoxInterpreter;
 
 public class LoxRunner
@@ -35,9 +37,23 @@ public class LoxRunner
     void Run(string content)
     {
         var scanner = new Scanner(content);
-        foreach (var token in scanner.ScanTokens())
+        var tokens = scanner.ScanTokens();
+        foreach (var token in tokens)
         {
             Console.WriteLine(token);
+        }
+        var parser = new LoxParser(tokens);
+        var expr = parser.Parse();
+        if (expr != null)
+        {
+            Console.WriteLine("Parsing successful. Expression tree:");
+            Console.WriteLine(new AstPrinter().Print(expr));
+            // Here you would typically evaluate the expression or do something with it.
+            // For now, we just print it.
+        }
+        else
+        {
+            Console.WriteLine("Parsing failed.");
         }
     }
 }
