@@ -48,8 +48,8 @@ public class LoxRunner
         {
             Console.WriteLine("Parsing successful. Expression tree:");
             Console.WriteLine(new AstPrinter().Print(expr));
-            // Here you would typically evaluate the expression or do something with it.
-            // For now, we just print it.
+            var interpreter = new Interpreter.LoxInterpreter();
+            interpreter.Interpret(expr);
         }
         else
         {

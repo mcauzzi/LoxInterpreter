@@ -5,14 +5,14 @@ if (args.Length > 1)
     return 64;
 }
 
-var interpreter = new LoxRunner();
+var runner = new LoxRunner();
 if (args.Length == 1)
 {
-    interpreter.RunFile(args[0]);
+    runner.RunFile(args[0]);
 }
 else
 {
-    interpreter.RunPrompt();
+    runner.RunPrompt();
 }
 
 return 0;
